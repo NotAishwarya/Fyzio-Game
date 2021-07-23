@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378081124949",
+    "project_id": "fyzio-56ed5",
+    "storage_bucket": "fyzio-56ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378081124949:android:cd8ea8832b2c3bcb246adc",
+        "android_client_info": {
+          "package_name": "com.fyzio.fyzio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378081124949-raoklksl8akcuuqb0441cjrjmgastuaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjoFBXc1NVuPA9kTnMQesXET3k6iPkCUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378081124949-raoklksl8akcuuqb0441cjrjmgastuaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
