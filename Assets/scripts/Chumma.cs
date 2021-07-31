@@ -1,26 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
 using Firebase;
 using Firebase.Extensions;
-using Firebase.Firestore;
+using Firebase.Firestore;*/
 
 public class Chumma : MonoBehaviour
 {
  
     // Start is called before the first frame update
-    DependencyStatus dependencyStatus = DependencyStatus.UnavailableOther;
-    FirebaseFirestore db;
+  /*  DependencyStatus dependencyStatus = DependencyStatus.UnavailableOther;
+    FirebaseFirestore db;*/
     private void Awake()
     {
-        db = FirebaseFirestore.DefaultInstance;
+      //  db = FirebaseFirestore.DefaultInstance;
         methodCall();
        
     }
 
     void Start()
     {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
+       /* FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
             dependencyStatus = task.Result;
             if (dependencyStatus == DependencyStatus.Available)
             {
@@ -34,7 +35,7 @@ public class Chumma : MonoBehaviour
                 Debug.LogError(
                   "Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
-        });
+        });*/
     }
 
     public void methodCall()
@@ -51,7 +52,7 @@ public class Chumma : MonoBehaviour
           docRef.SetAsync(city, SetOptions.MergeAll).ContinueWithOnMainThread(task => {
               Debug.Log("Added data");
           });*/
-
+/*
         db.Collection("users").Document("124").Collection("history").Document().SetAsync(new Dictionary<string, string>
         {
             {"date","11052004" },
@@ -61,7 +62,7 @@ public class Chumma : MonoBehaviour
         {
             Debug.Log(task);
             Debug.Log("Added");
-        });
+        });*/
     }
 
     // Update is called once per frame
